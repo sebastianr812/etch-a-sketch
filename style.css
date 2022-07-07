@@ -1,0 +1,25 @@
+#gameBoard{
+    width: 500px;
+    height:500px;
+    display: grid;
+}
+
+.grid{
+    background-color: white;
+}
+
+body{
+    background-color: grey;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+
+
