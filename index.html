@@ -14,18 +14,18 @@
         <div class="content">
             <div id="gameBoard"></div>
              <div class="colorButtons">
-                <button onclick="changeColor('black')">Black</button>
-                <button onclick="changeColor('red')">Red</button>
-                <button onclick="changeColor('orange')">Orange</button>
-                <button onclick="changeColor('random')">Random</button>
-                <button onclick="changeColor('white')">Eraser</button>
+                <button class= "blackBtn" onclick="changeColor('black')">Black</button>
+                <button class= "redBtn" onclick="changeColor('red')">Red</button>
+                <button class= "orangeBtn" onclick="changeColor('orange')">Orange</button>
+                <button class= "randomBtn" onclick="changeColor('random')">Random</button>
+                <button class= "eraserBtn" onclick="changeColor('white')">Eraser</button>
                 <button onclick="resetBoard()">Reset</button>
             </div>
             <div class="input">
                 <input type ="text" placeholder="Change size" value="16" onchange="changeSize(this.value)"/>
                 <button>Set size</button>
             </div>
-            <div class="error">Imput must be between 2 and 100</div>
+            <div class="error"></div>
         </div>
     </div>
     

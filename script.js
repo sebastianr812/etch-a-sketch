@@ -46,21 +46,33 @@ function colorSquare(){
 
 function changeSize(input){
     if (input>=2 && input<=100){
-        document.querySelector('.error').style.display='none'
+        document.querySelector('.error').textContent=''
         makeBoard(input)    
     }else{
-        document.querySelector('.error').style.display='flex'
+        
+        document.querySelector('.error').textContent='Error, must be between 2 and 100'
     }
    
 }
+function getRandomColor() {
+    var letters = '0123456789ABCDEF';
+    var color = '#';
+    for (var i = 0; i < 6; i++) {
+      color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+  }
 
 function changeMode(e){
     if (e.target.tagName !== 'BUTTON'){
         click=!click
         if(click){
             document.querySelector('.mode').textContent='Mode:Coloring'
+            document.querySelector('.mode').style.color=getRandomColor()
         }else {
             document.querySelector('.mode').textContent='Mode:Not-Coloring'
+            document.querySelector('.mode').style.color='black'
+            
         }
     }
 }
